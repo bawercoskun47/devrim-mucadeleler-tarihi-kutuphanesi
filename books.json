@@ -1,0 +1,20 @@
+[
+  {
+    "id": "fransiz-devrimi",
+    "title": "Fransız Devrimi (1789)",
+    "description": "Modern tarihin dönüm noktalarından biri olan Fransız Devrimi ve etkileri...",
+    "downloadLink": "https://drive.google.com/uc?id=1example1&export=download"
+  },
+  {
+    "id": "paris-komunu",
+    "title": "Paris Komünü (1871)",
+    "description": "İşçi sınıfının ilk iktidar deneyimi olan Paris Komünü'nün hikayesi...",
+    "downloadLink": "https://drive.google.com/uc?id=1example2&export=download"
+  },
+  {
+    "id": "rus-devrimi",
+    "title": "Rus Devrimi (1917)",
+    "description": "20. yüzyılın en önemli toplumsal olaylarından Rus Devrimi'nin analizi...",
+    "downloadLink": "https://drive.google.com/uc?id=1example3&export=download"
+  }
+]
