@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devrim ve Mücadeleler Tarihi Kütüphanesi</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .content-area {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-red-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold">
+                <i class="fas fa-book-reader mr-2"></i>
+                Devrim ve Mücadeleler Tarihi Kütüphanesi
+            </h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+    <!-- Kitap Listesi -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4">
+                <i class="fas fa-book mr-2"></i>
+                Kitaplar
+            </h2>
+            <div id="bookList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <p class="text-gray-500">Kitaplar yükleniyor...</p>
+            </div>
+        </section>
+
+        <!-- Kitap Görüntüleme Bölümü -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Kitap İçeriği -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4">
+                    <i class="fas fa-book-open mr-2"></i>
+                    Kitap İçeriği
+                </h2>
+                <div id="bookContent" class="content-area prose max-w-none h-[500px] overflow-y-auto border rounded p-4 bg-white">
+                    <div class="flex items-center justify-center h-full">
+                        <p class="text-gray-500">Okumak istediğiniz kitabı seçin</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alıntılar Bölümü -->
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4">
+                    <i class="fas fa-quote-right mr-2"></i>
+                    Alıntılar
+                </h2>
+                <div class="mb-4">
+                    <button id="addQuoteBtn" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 disabled:bg-gray-400" disabled>
+                        <i class="fas fa-plus mr-2"></i>
+                        Seçili Metni Alıntı Olarak Ekle
+                    </button>
+                </div>
+                <div id="quotesList" class="space-y-4 h-[400px] overflow-y-auto">
+                    <p class="text-gray-500 text-center mt-10">Henüz alıntı eklenmedi</p>
+                </div>
+                <div class="mt-4 pt-4 border-t">
+                    <button id="downloadQuotesBtn" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 disabled:bg-gray-400" disabled>
+                        <i class="fas fa-download mr-2"></i>
+                        Alıntıları İndir
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-8">
+        <div class="container mx-auto px-4 py-6 text-center">
+            <p>&copy; 2024 Devrim ve Mücadeleler Tarihi Kütüphanesi</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
